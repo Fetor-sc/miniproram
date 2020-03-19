@@ -1,0 +1,15 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/main/main"
+	],
+	"window": {
+		"navigationBarBackgroundColor": "#b3d4db",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "sc",
+		"backgroundColor": "#ffffff",
+		"backgroundTextStyle": "dark",
+		"enablePullDownRefresh": false
+	},
+	"sitemapLocation": "sitemap.json"
+}

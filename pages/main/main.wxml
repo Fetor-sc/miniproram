@@ -1,0 +1,32 @@
+<!--pages/main/main.wxml-->
+<import src="./main-item/main-item-template"/>
+<view>
+	<swiper indicator-dots="{{true}}" autoplay="{{true}}" autoplay="5000">
+		<swiper-item>
+			<image src="/images/iqiyi.png" class=""/>
+		</swiper-item>
+		<swiper-item>
+			<image src="/images/vr.png" class=""/>
+		</swiper-item>
+		<swiper-item>
+			<image src="/images/wx.png" class=""/>
+		</swiper-item>
+	</swiper>
+	<block wx:for="{{mains_content}}" wx:key="index">
+		<template is="mainList" data="{{item}}" />
+		<view>
+			<image class="main-author" src="{{item.imgSrc}}"/>
+			<text class="main-date">{{item.date}}</text>
+		</view>
+		<text class="main-title">{{item.title}}</text>
+		<image class="main-image" src="{{item.author}}"/>
+		<text class="main-content">{{item.content}}</text>
+		<view>
+			<image class="main-like-image" src="/images/icon/chat.png"/>
+			<text class="main-like-font">{{item.reading}}</text>
+			<image class="main-like-image" src="/images/icon/view.png"/>
+			<text class="main-like-font">{{item.collection}}</text>
+		</view>
+	</block>
+</view>
+
